@@ -87,4 +87,15 @@ static void CheckStudent(int n)
 
 CheckStudent(GetRandomNumber());
 
-
+// another way to find maximum
+static int FindMaximum(int[] numbers)
+{
+    int currentMax = numbers[0];
+    for (int i = 1; i < numbers.Length; i++)
+    {
+        if (numbers[i] > currentMax)
+            currentMax = numbers[i];
+    }
+    return currentMax;
+}
+Console.WriteLine(FindMaximum(new int[] { 21, 2, 3, 3 }));
