@@ -3,6 +3,7 @@
 int sigrdze = 10;
 int sigane = 20;
 
+// fartobis gamotvla.
 static int Fartobi(int x, int y)
 {
     return x * y;
@@ -10,6 +11,7 @@ static int Fartobi(int x, int y)
 
 Console.WriteLine("Fartobi: " + Fartobi(sigrdze, sigane));
 
+// method how much spaces text have.
 static int checkSpaes(string text)
 {
 
@@ -28,6 +30,7 @@ static int checkSpaes(string text)
 string checkText = "gamarjob a ";
 Console.WriteLine("\"{0}\" contains {1} whitespaces" , checkText, checkSpaes(checkText));
 
+// Method Sum numbers digits.
 static int SumOfNums(int number)
 {
     string n = number.ToString();
@@ -44,6 +47,7 @@ static int SumOfNums(int number)
 int sumOfDigits = 22;
 Console.WriteLine($"Sum digits of number {sumOfDigits}  is: { SumOfNums(sumOfDigits)}" );
 
+// get max number from array.
 static int MaxNumberInArray(int[] array)
 {
 
@@ -53,13 +57,14 @@ static int MaxNumberInArray(int[] array)
 int[] numbers = { 2, 3, 33 };
 Console.WriteLine("Max Number in array is: " + MaxNumberInArray(numbers));
 
-
+// method for create random number.
 static int GetRandomNumber()
 {
     var random = new Random();
     return random.Next(100);
 }
 
+// check grades method from random number method.
 static void CheckStudent(int n)
 {
     if (n >= 51 && n < 60)
