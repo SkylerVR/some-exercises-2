@@ -99,3 +99,4 @@ static int FindMaximum(int[] numbers)
     return currentMax;
 }
 Console.WriteLine(FindMaximum(new int[] { 21, 2, 3, 3 }));
+
